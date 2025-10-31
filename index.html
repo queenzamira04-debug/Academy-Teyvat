@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Академия Будущего</title>
+    <link rel="icon" type="image/png" href="C:\Users\замира\Downloads\иконка.jpg">
+    <style>
+        body {
+            margin: 0;
+            font-family:"Times New Roman", Times, serif;
+            background-color: #f6f9fc;
+            color: #333;
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Боковое меню */
+        nav {
+		background: linear-gradient(to bottom, #0f2b80, #4aa3ff); /* твой красивый синий градиент */
+    		width: 220px; /* чуть шире, чтобы текст дышал */
+    		height: 100vh;
+    		color: white;
+    		position: fixed;
+    		left: 0;
+    		top: 0;
+    		padding: 30px 20px;
+    		font-family: "Times New Roman", Times, serif;
+    		font-size: 18px; /* немного больше текст */
+    		border-right: 4px solid white; /* белая разделяющая полоса */
+	}
+
+        nav h1 {
+            font-size: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        nav a {
+		display: block;
+    		color: white;
+    		text-decoration: none;
+    		margin: 12px 0;
+    		font-size: 20px; /* чуть больше шрифт */
+    		font-family: "Times New Roman", Times, serif;
+    		font-weight: bold;
+    		padding: 8px 0;
+    		border-bottom: 1.5px solid rgba(255, 255, 255, 0.5); /* белая полоска между пунктами */
+    		transition: color 0.3s ease, transform 0.2s ease;
+	}
+
+	nav a:hover {
+    			color: #ffea8a; /* мягкий золотистый при наведении */
+    			transform: translateX(5px);
+		}
+
+        /* Основное содержимое */
+        main {
+            flex: 1;
+            overflow-y: auto;
+            padding: 30px;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #002b5c;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 5px;
+        }
+
+        .teachers {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .teacher {
+            background: #f0f4f9;
+            padding: 15px;
+            border-radius: 8px;
+            width: calc(50% - 20px);
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .teacher img {
+    		width: 100%;
+    		aspect-ratio: 1 / 1; /* делает картинку квадратной */
+    		object-fit: cover;   /* аккуратно обрезает по центру */
+    		border-radius: 10px;
+	}
+
+        footer {
+            text-align: center;
+            color: #666;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Академия<br>Тейвата✨</h1>
+        <a href="#about">О нас</a>
+        <a href="#teachers">Преподаватели</a>
+        <a href="#schedule">Расписание</a>
+        <a href="#map">Планировка</a>
+    </nav>
+
+    <main>
+        <section id="about">
+    <h2>О нас</h2>
+
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <!-- Фото слева -->
+        <img src="C:\Users\замира\Downloads\Академия.png" alt="Академия" style="width: 300px; border-radius: 10px;">
+
+        <!-- Текст справа -->
+        <div style="flex: 1; min-width: 250px;">
+            <p style="font-size: 18px; font-weight: 600; line-height: 1.6; color: #222;">
+                Академия Тейвата — это современное образовательное пространство, где каждый студент раскрывает свой потенциал.  
+                Мы объединяем знания, технологии и творчество, чтобы готовить специалистов нового поколения.  
+                Наши преподаватели вдохновляют, а атмосфера академии помогает каждому расти и достигать целей.
+            </p>
+        </div>
+    </div>
+</section>
+
+        <section id="teachers">
+            <h2>Преподаватели👩🏻‍🏫🧑🏻‍🏫</h2>
+            <div class="teachers">
+                <div class="teacher">
+                    <img src="C:\Users\замира\Downloads\Тэппей.jpg" alt="Теппей">
+                    <h3>Теппей</h3>
+                    <p>Директор Академий</p>
+                </div>
+                <div class="teacher">
+                    <img src="C:\Users\замира\Downloads\Аль Хайтам.jpg" alt="Аль-Хайтам">
+                    <h3>Аль-Хайтам</h3>
+                    <p>Учитель владения глазами и сердцами богов.</p>
+                </div>
+            
+        	<div class="teacher">
+                    <img src="C:\Users\замира\Downloads\Варка.jpg" alt="Варка">
+                    <h3>Варка</h3>
+                    <p>Преподаватель Физкультуры</p>
+                </div>
+            
+		<div class="teacher">
+                    <img src="C:\Users\замира\Downloads\Нилу.jpg" alt="Нилу">
+                    <h3>Нилу</h3>
+                    <p>Преподаватель Биологий</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="schedule">
+            <h2>Расписание Университета</h2>
+            <p>Посмотрите актуальное расписание занятий ниже 👇</p>
+            <img src="C:\Users\замира\Downloads\Расписание универа.png" alt="Расписание академии" style="width: 60%; border-radius: 10px;">
+        
+	<h2>Расписание Колледжа</h2>
+            <p>Посмотрите актуальное расписание занятий ниже 👇</p>
+            <img src="C:\Users\замира\Downloads\расписание колледжа.jpg" alt="Расписание академии" style="width: 60%; border-radius: 10px;">
+        </section>
+
+
+        <section id="map">
+            <h2>Планировка колледжа</h2>
+            <p>Наш колледж состоит из пяти этажей. Ниже представлены фото этажей 👇</p>
+
+            <div class="floors">
+                <h3>1 этаж</h3>
+                <img src="C:\Users\замира\Downloads\Первый 1.jpg" style="width: 60%; border-radius: 10px;"">
+                <h3>2 этаж</h3>
+		<img src="C:\Users\замира\Downloads\Второй этаж.jpg" style="width: 60%; border-radius: 10px;"">
+                <h3>3 этаж</h3>
+                <img src="C:\Users\замира\Downloads\третий этаж.jpg" style="width: 60%; border-radius: 10px;"">
+                <h3>4 этаж</h3>
+                <img src="C:\Users\замира\Downloads\четвертый этаж.jpg" style="width: 60%; border-radius: 10px;"">
+                <h3>5 этаж</h3>
+                <img src="C:\Users\замира\Downloads\пятый этаж.jpg" style="width: 60%; border-radius: 10px;"">
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2025 Академия Тейвата | Все права защищены
+        </footer>
+    </main>
+</body>
+</html>
